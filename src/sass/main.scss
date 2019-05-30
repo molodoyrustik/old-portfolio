@@ -1,0 +1,43 @@
+// variables
+$white: #efeee9;
+$beige: #eeebdf;
+$main-font-color: #373e42;
+$subtitle-color: #455a64;
+$white-green: #00bfa5;
+$green: #009688;
+
+// fonts
+@import "_misc/font-roboto";
+@import "_misc/font-awesome";
+@import "_misc/font-berniershade";
+
+// layout
+@import "_misc/mixins";
+@import "_misc/adjustment";
+
+// styles common
+@import "common/header";
+@import "common/footer";
+
+// style pages
+@import "sections/about.scss";
+// style pages
+@import "sections/welcome.scss";
+// style pages
+@import "sections/blog.scss";
+// style pages
+@import "sections/works.scss";
+
+// adaptive
+// desktop
+@import "adaptive/desktop/header.scss";
+@import "adaptive/desktop/about.scss";
+@import "adaptive/desktop/footer.scss";
+// tablets
+@import "adaptive/tablets/header.scss";
+@import "adaptive/tablets/about.scss";
+@import "adaptive/tablets/footer.scss";
+// phones
+@import "adaptive/phones/header.scss";
+@import "adaptive/phones/about.scss";
+@import "adaptive/phones/footer.scss";

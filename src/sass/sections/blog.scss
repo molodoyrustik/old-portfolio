@@ -1,0 +1,289 @@
+.blog-user__name {
+  display: block;
+  color: #ffffff;
+  font-size: 63px;
+  line-height: 56px;
+
+  @include tablets {
+    font-size: 49px;
+    line-height: 52px;
+  }
+
+  @include phones {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+
+  &::after, &::before {
+    background-color: #ffffff;
+  }
+}
+
+.blog-user__desc {
+  @include tablets {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.triangle {
+  height: 160px;
+  width: 50%;
+
+
+  &_fill {
+    &_left {
+      fill: #ffffff;
+      left: 0;
+    }
+
+    &_right{
+      fill: #ffffff;
+      right: 0;
+    }
+  }
+}
+
+.blog {
+  padding-top: 70px;
+  background: #ffffff;
+
+  @include tablets {
+    padding-top: 50px;
+  }
+
+  @include phones {
+    padding-top: 35px;
+  }
+}
+
+.sidebar {
+  float: left;
+  width: 273px / 1800px * 100%;
+  margin-left: 125px / 1800px * 100%;
+  text-align: right;
+
+  @include desktop {
+    width: 273px / 1200px * 100%;
+    margin-left: 45px / 1200px * 100%;
+  }
+
+  @include tablets {
+    position: fixed;
+    float: none;
+    top: 0;
+    left: -80%;
+    bottom: 0;
+    z-index: 110;
+    width: 80%;
+    height: 100%;
+    padding: 80px 80px;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #00bfa5;
+    transition: all .3s;
+    box-sizing: border-box;
+    box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  @include phones {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.sidebar--active {
+  left: 0;
+}
+
+.sidebar__toggle {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  @include centered('y');
+  right: -30px;
+  border-radius: 50%;
+  background-color: #00bfa5;
+
+  box-shadow: 4px 0 5px -2px rgba(0, 0, 0, 0.2);
+
+  @include tablets {
+    display: block;
+  }
+
+  @include phones {
+    right: -10px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.sidebar__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__item {
+
+}
+
+.sidebar__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 26px;
+  @include roboto(bold);
+  color: #455a64;
+  transition: all .5s;
+  text-decoration: none;
+
+
+  @include tablets {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+
+.posts {
+  float: right;
+  width: 980px / 1800px * 100%;
+  margin-right: 310px / 1800px * 100%;
+
+  @include desktop {
+    width: 680px / 1200px * 100%;
+    margin-right: 110px / 1200px * 100%;
+  }
+
+  @include tablets {
+    float: none;
+    width: 720px / 768px * 100%;
+    margin: 0 auto;
+  }
+
+  @include phones {
+    float: none;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+}
+
+.posts__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 210px;
+  @include tablets {
+    padding-bottom: 250px;
+  }
+}
+
+.posts__item {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  padding-bottom: 70px;
+  border-bottom: 5px solid #f1f1f2;
+
+  &:last-child {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  @include tablets {
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+  }
+
+  @include phones {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.post {
+  margin: 0;
+  padding: 0;
+}
+
+.post__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  @include bernier(regular);
+  color: #455a64;
+
+  @include tablets {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include phones {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.post__date {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 41px;
+  @include roboto(regular);
+  color: $white-green;
+
+  @include tablets {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+
+}
+
+.post__text {
+  font-size: 16px;
+  line-height: 26px;
+  @include roboto(regular);
+
+  @include tablets {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #455a64;
+    text-align: left;
+
+    @include tablets {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

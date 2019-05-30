@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+
+  }
+
+  .footer_row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px / 720px * 100%;
+    padding-right: 30px / 720px * 100%;
+
+    &:last-child {
+      padding-top: 15px;
+    }
+  }
+
+  .footer__left {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer__right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__menu-item {
+    margin-left: 40px / 720px * 100%;
+  }
+
+  .footer__socials-item {
+    margin-left: 10px / 720px * 100%;
+  }
+}

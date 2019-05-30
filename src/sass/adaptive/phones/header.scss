@@ -1,0 +1,35 @@
+@media screen and (max-width: 480px) {
+  .header__row {
+    max-width: 300px;
+    padding-top: 10px;
+    padding-left: 10px ;
+    padding-right: 10px;
+  }
+
+  .socials__item {
+    margin-left: 30px;
+  }
+
+  .header__row-right {
+    width: 25px;
+    height: 22px;
+  }
+
+
+
+  .user__name {
+    font-size: 21px;
+  }
+
+  .user_desc {
+    font-size: 14px;
+  }
+
+  .down-arrow {
+    bottom: 70px;
+  }
+
+  .triangle {
+    height: 30px;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "skills": [
+    {
+      "Frontend": [
+        "HTML5",
+        "CSS3",
+        "Responsive",
+        "Adaptive",
+        "JavaScript",
+        "Jquery",
+        "React",
+        "Redux",
+        "SSR"
+      ]
+    },
+    {
+      "Backend": [
+        "PHP",
+        "mySQL",
+        "Node.js",
+        "Express",
+        "Mongo.db",
+        "Python"
+      ]
+    },
+    {
+      "WorkFlow": [
+        "Git",
+        "Gulp",
+        "Bower",
+        "Webpack",
+        "NPM",
+        "Yarn",
+        "Composer"
+      ]
+    }
+  ],
+  "text": "Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты."
+}

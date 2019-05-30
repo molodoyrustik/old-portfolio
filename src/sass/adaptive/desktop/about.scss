@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px) {
+
+  .about__left {
+    width: 46.666666666666664%;
+    padding-top: 0;
+    padding-right: 20px / 1200px * 100%;
+    padding-left: 20px / 1200px * 100%;
+    text-align: center;
+  }
+
+  .about__section-title {
+    float: none;
+    margin-top: -30px;
+    margin-left: 0;
+  }
+
+  .user-about {
+    float: none;
+    width: 100%;
+  }
+
+  .user-about__picture {
+    max-width: 445px;
+  }
+
+  .user-about__title {
+    margin-bottom: 40px;
+  }
+
+
+  .user-about__text {
+    max-width: 445px;
+  }
+
+
+  .about__right {
+    width: 43.333333333333336%;
+    padding-left: 40px / 1200px * 100%;
+    padding-right: 40px / 1200px * 100%;
+  }
+
+  .about-data {
+    max-width: 530px;
+  }
+
+  .about-user-info__title {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .about-data__subtitle {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+
+  .skills__item {
+    margin-bottom: 0px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+
+
+  .skill-section__list {
+
+  }
+
+  .skills-section__item {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 40px / 530px * 100%;
+
+  }
+
+  .skill__circle {
+    width: 110px;
+  }
+
+  .skill__circle {
+    stroke-width: 20;
+  }
+
+  .map {
+    position: relative;
+    width: 100%;
+    height: 975px;
+  }
+
+  .map__contacts {
+    top: 350px;
+  }
+
+
+}

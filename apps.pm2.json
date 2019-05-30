@@ -1,0 +1,9 @@
+{
+  "apps":[
+    {
+      "name": "futurestudio-homepage",
+      "script": "gulp",
+      "args": "start"
+    }
+  ]
+}

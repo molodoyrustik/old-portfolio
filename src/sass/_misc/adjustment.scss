@@ -1,0 +1,48 @@
+$footer-height: 150px;
+$container-width: 1200px;
+
+// html {
+//   max-width: 1800px;
+//   margin: 0 auto;
+// }
+
+html, body {
+  width: 100%;
+  min-width: 320px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.42;
+  @include roboto(regular);
+  font-smoothing: antialiased;
+}
+
+.wrapper {
+  min-height: calc(100vh - $footer-height);
+  overflow: hidden;
+}
+
+.main-content{
+
+}
+
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer{
+  width: 100%;
+  min-height: $footer-height;
+}
+
+h1, h2, h3, h4, h5, h6, {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}

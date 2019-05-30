@@ -1,0 +1,100 @@
+@mixin box-shadow($params){
+  box-shadow: $params;
+  -webkit-box-shadow : $params;
+  -moz-box-shadow: $params;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin inline-block($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin awesome() {
+  font-family: 'FontAwesome';
+}
+
+@mixin bernier($typeBernier: regular) {
+
+  @if $typeBernier == regular {
+    font-family: 'BERNIER';
+  } @else if $typeBernier == distressed {
+    font-family: 'BERNIER Distressed';
+  } @else if $typeBernier == shade {
+    font-family: 'BERNIER Shade';
+  }
+}
+
+
+@mixin roboto($typeRoboto: regular) {
+
+  @if $typeRoboto == regular {
+    font-family: 'Roboto Regular';
+  } @else if $typeRoboto == medium-italic {
+    font-family: 'Roboto Medium Italic';
+  } @else if $typeRoboto == medium {
+    font-family: 'Roboto Medium';
+  } @else if $typeRoboto == light-italic {
+    font-family: 'Roboto Light Italic';
+  } @else if $typeRoboto == light {
+    font-family: 'Roboto Light';
+  } @else if $typeRoboto == italic {
+    font-family: 'Roboto Italic';
+  } @else if $typeRoboto == bold-italic {
+    font-family: 'Roboto Bold Italic';
+  } @else if $typeRoboto == bold {
+    font-family: 'Roboto Bold';
+  }
+}
+
+
+@mixin centered($axis: 'both') {
+  position: absolute;
+
+  @if $axis == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $axis == 'x' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if $axis == 'y' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

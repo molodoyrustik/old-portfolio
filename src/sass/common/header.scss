@@ -1,0 +1,188 @@
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 650px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__row {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 30px / 1740px * 100%;
+  padding-right: 30px / 1740px * 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.header__row-left {
+  float: left;
+  width: 50%;
+  padding-top: 5px;
+}
+
+.socials {
+  display: inline-block;
+
+  margin: 0;
+  font-size: 0;
+}
+
+.socials__item {
+  @include inline-block(baseline);
+
+  margin-left: 30px / 900px * 100%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.socials__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  &:hover .socials__svg {
+    opacity: 1;
+  }
+}
+
+.socials__svg {
+  opacity: 0.5;
+}
+
+.socials__link--vk .socials__svg {
+  width: 30px;
+  height: 17px;
+}
+
+.socials__link--gh .socials__svg {
+  width: 26px;
+  height: 22px;
+}
+
+.socials__link--in .socials__svg {
+  width: 24px;
+  height: 22px;
+}
+
+.header__row-right {
+  float: right;
+}
+
+.hamburger {
+
+  cursor: pointer;
+}
+
+.down-arrow__icon {
+  width: 100%;
+}
+
+.header__row-right {
+  display: inline-block;
+}
+
+
+.header__bg {
+  text-align: center;
+}
+
+.header__bg-img {
+
+}
+
+// socials hamburger down arrow
+
+.down-arrow {
+  @include centered('x');
+  bottom: 90px;
+}
+
+.header__title {
+  @include centered('y');
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  width: 100%;
+  opacity: 0.06;
+}
+
+
+.header__user-block {
+  @include centered();
+}
+
+.user {
+  margin: 0;
+  padding: 0;
+}
+
+.user__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.user__photo-avatar {
+  margin: 0;
+}
+
+.user__photo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.user__name {
+  margin: 0;
+  margin-bottom: 5px;
+  @include roboto(medium);
+  font-size: 35px;
+  line-height: 38px;
+  color: #fff;
+}
+
+.user_desc {
+  margin: 0;
+  padding: 0;
+  @include roboto(light);
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.header__triangles {
+  position: absolute;
+  bottom: 0;
+}
+
+.triangle {
+  height: 160px;
+  width: 50%;
+
+
+  &_fill {
+    &_white {
+      fill: $white;
+      left: 0;
+    }
+
+    &_beige{
+      fill: $beige;
+      right: 0;
+    }
+  }
+}

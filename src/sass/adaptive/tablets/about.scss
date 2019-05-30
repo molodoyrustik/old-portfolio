@@ -1,0 +1,144 @@
+@media screen and (max-width: 768px) {
+  .about__left {
+    width: 97.39584%;
+    float: none;
+    padding-top: 25px;
+    padding-right: 10px / 768px * 100%;
+    padding-left: 10px / 768px * 100%;
+    text-align: center;
+  }
+
+  .about__section-title {
+    float: none;
+    padding: 25px 50px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .user-about {
+    float: none;
+    width: 100%;
+  }
+
+  .user-about__picture {
+    max-width: 470px;
+    margin-bottom: 40px;
+  }
+
+  .user-about__title {
+    margin-bottom: 10px;
+  }
+
+  .user-about__text {
+    max-width: 470px;
+    text-align: justify;
+  }
+
+
+  .about__right {
+    float: none;
+    width: 97.39584%;
+    padding-top: 40px;
+    padding-left: 10px / 768px * 100%;
+    padding-right: 10px / 768px * 100%;
+    text-align: center;
+  }
+
+  .about-data {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  .about-data__description {
+    margin-bottom: 40px;
+  }
+
+  .about-data__subtitle {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .about-user-info__title {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .about-user-info__text {
+    max-width: 470px;
+    text-align: justify;
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .about-data__content {
+
+  }
+
+  .skills {
+
+  }
+
+  .skills__item {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+
+  .skill-section__list {
+
+  }
+
+  .skill-section {
+
+  }
+
+  .skill-section__title {
+
+  }
+
+  .skill-section__list {
+    margin: 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .skills-section__item {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .skill__circle {
+    width: 110px;
+  }
+
+  .skill__circle {
+    stroke-width: 20;
+  }
+
+  .map {
+    position: relative;
+    width: 100%;
+    height: 865px;
+  }
+
+  .map__contacts {
+    width: 270px;
+    top: 175px;
+  }
+
+  .contacts__item {
+    margin-bottom: 25px;
+  }
+
+
+}

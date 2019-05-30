@@ -1,0 +1,10 @@
+include ../mixins/mixins
+
+doctype html
+html(lang="ru-RU").html-welcome
+	include ../common/head.pug
+body.body-welcome
+	block content
+
+	script(src='./js/foundation.js' defer)
+	script(src='./js/main.js' defer)

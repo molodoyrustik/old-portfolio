@@ -1,0 +1,142 @@
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  min-height: 150px;
+  background: url('../images/bg/footer-bg.png');
+  z-index: 100;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+}
+
+.footer_row {
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 30px / 1800px * 100%;
+  padding-right: 30px / 1800px * 100%;
+  padding-bottom: 25px;
+  @extend %clearfix;
+  border-bottom: 1px solid #646a6d;
+
+  &:last-child {
+    border-bottom:none;
+  }
+
+}
+
+.footer__left {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.footer__menu {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__menu-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.footer__menu-item {
+  display: inline-block;
+  margin: 0;
+  margin-left: 40px / 870px * 100%;
+  padding: 0;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.footer__menu-link {
+  font-size: 16px;
+  @include roboto(medium);
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: $white-green;
+  }
+}
+
+.footer__right {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.footer__socials {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.footer__socials-item {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px / 870px * 100%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.footer__socials-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #7e8284;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+
+  &:hover {
+    border: 1px solid transparent;
+  }
+
+  &--vk{
+    background-image: url('../images/icons/vk.svg') ;
+    &:hover {
+      background-image: url('../images/icons/vk_round.svg') ;
+    }
+  }
+  &--gh{
+    background-image: url('../images/icons/github.svg') ;
+    &:hover {
+      background-image: url('../images/icons/github_round.svg') ;
+    }
+  }
+  &--in{
+    background-image: url('../images/icons/in.svg') ;
+    &:hover {
+      background-image: url('../images/icons/in_round.svg') ;
+    }
+  }
+}
+
+.footer__quote {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  @include roboto(light);
+  opacity: 0.5
+}
+
+.footer__right-text {
+
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  @include roboto(light);
+  opacity: 0.5
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+  .header__row {
+    padding-left: 25px / 768px * 100%;
+    padding-right: 25px / 768px * 100%;
+  }
+
+  .socials__item {
+    @include inline-block(baseline);
+
+    margin-left: 30px / 360px * 100%;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .header__row-right {
+    width: 40px;
+    height: 35px;
+  }
+
+
+  .down-arrow {
+    bottom: 70px;
+  }
+
+  .triangle {
+    height: 65px;
+  }
+}
